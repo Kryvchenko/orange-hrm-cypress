@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypres run --headless"
+    "test": "npx cypres open"
   },
   "keywords": [],
   "author": "",

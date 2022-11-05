@@ -1,3 +1,6 @@
+// const Page = require('./Page');
+/// <reference types ='Cypress'/>
+
 class LoginPage {
    elements = {
     userName: () => cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input'),
@@ -6,6 +9,10 @@ class LoginPage {
     bannerImg: () => cy.get('.oxd-brand-banner > img'),
     warning: () => cy.get('.oxd-alert-content > .oxd-text')
 
+   }
+
+   open(url) {
+    return cy.visit(url);
    }
 
    login(username, password) {
